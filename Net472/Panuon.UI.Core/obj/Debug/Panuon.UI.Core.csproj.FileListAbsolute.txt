@@ -1,0 +1,5 @@
+C:\Users\root\Downloads\Src\Outputs\Debug\Net472\Panuon.UI.Core.dll
+C:\Users\root\Downloads\Src\Outputs\Debug\Net472\Panuon.UI.Core.pdb
+C:\Users\root\Downloads\Src\Net472\Panuon.UI.Core\obj\Debug\Panuon.UI.Core.csproj.CoreCompileInputs.cache
+C:\Users\root\Downloads\Src\Net472\Panuon.UI.Core\obj\Debug\Panuon.UI.Core.dll
+C:\Users\root\Downloads\Src\Net472\Panuon.UI.Core\obj\Debug\Panuon.UI.Core.pdb
