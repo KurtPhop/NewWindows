@@ -7,7 +7,7 @@
             xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
             mc:Ignorable="d"
             Title="NewWindows |"
-            Height="494"
+            Height="845.5"
             Width="845.013"
             MinHeight="550"
             MinWidth="800"
@@ -156,104 +156,125 @@
         </Style>
 
     </pu:WindowX.Resources>
+    <ScrollViewer Margin="0,0,0,20">
+        <Grid Margin="20,10,20,0" Height="610" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
 
-    <Grid Margin="20,10,20,0" Height="466" VerticalAlignment="Top">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
 
-
-        <pu:Switch x:Name="Explorer" Content="Включить расширение файлов" HorizontalAlignment="Center" Margin="476,44,74,0" VerticalAlignment="Top" Uid="switch" Width="227" Click="Explorer_Click" VerticalContentAlignment="Center" BoxHeight="15" BoxWidth="30" CheckedBackground="#FF00D83B" Background="White"/>
-        <pu:FormGroup x:Name="statuswinrar" Header="Статус : "
+            
+            <pu:FormGroup x:Name="statuswinrar" Header="Статус : "
                 GroupName="MyProgressBarGroup"
                 Style="{StaticResource ProgressBarFormGroupStyle}" Margin="25,51,396,394" Height="19" Content="" HeaderPadding="0" HeaderWidth="0" HorizontalHeaderAlignment="Right" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" IsHitTestVisible="False"/>
-        <Image HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="28" Source="Resources/winrar-removebg-preview.png" Stretch="Fill" Margin="25,44,0,0"/>
-        <ProgressBar x:Name="progresswinrar" Style="{StaticResource StandardProgressBarStyle}"
+            <Image HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="28" Source="Resources/winrar-removebg-preview.png" Stretch="Fill" Margin="25,44,0,0"/>
+            <ProgressBar x:Name="progresswinrar" Style="{StaticResource StandardProgressBarStyle}"
                 Background="#226C6EEA"
                 Foreground="#6C6EEA"
                 pu:ProgressBarHelper.ShadowColor="#6C6EEA" Margin="0,0,425,375" Height="14" HorizontalAlignment="Right" Width="353" VerticalAlignment="Bottom" />
-        <pu:FormGroup x:Name="downloadwinrar" Header="Downloaded : "
+            <pu:FormGroup x:Name="downloadwinrar" Header="Downloaded : "
                 GroupName="MyProgressBarGroup"
                 Style="{StaticResource ProgressBarFormGroupStyle}" Margin="25,90,0,355" Height="19" HorizontalAlignment="Left" VerticalAlignment="Center" HorizontalHeaderAlignment="Center" Width="195" Content="" VerticalContentAlignment="Center" HeaderPadding="0" HorizontalContentAlignment="Left"/>
-        <pu:FormGroup x:Name="speedwinrar" Header="Speed : "
+            <pu:FormGroup x:Name="speedwinrar" Header="Speed : "
                 GroupName="MyProgressBarGroup"
                 Style="{StaticResource ProgressBarFormGroupStyle}" Margin="226,90,406,355" Height="19" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="145" HeaderPadding="0" HorizontalHeaderAlignment="Right"/>
-        <Button x:Name="BtnTest"
+            <Button x:Name="BtnTest"
                 pu:ButtonHelper.CornerRadius="5" Margin="25,113,657,329" Content="Скачать" Click="BtnTest_Click"/>
-        <TextBlock Text="Программы"
+            <TextBlock Text="Программы"
                 FontSize="20" Margin="0,0,648,426" />
-        <TextBlock Text="Функции"
+            <TextBlock Text="Функции"
                 FontSize="20" Margin="443,0,205,426" />
-        <pu:FormGroup x:Name="statusnotepadpp" Header="Статус : "
+            <pu:FormGroup x:Name="statusnotepadpp" Header="Статус : "
                 GroupName="MyProgressBarGroup"
                 Style="{StaticResource ProgressBarFormGroupStyle}" Margin="25,152,396,293" Height="19" Content="" HeaderPadding="0" HeaderWidth="0" HorizontalHeaderAlignment="Right" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" IsHitTestVisible="False"/>
-        <Image HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="28" Source="Resources/f896aebe4551c1998fc00e2818180432803a952a418e30f2b21b647fde3cf836_200-removebg-preview.png" Stretch="Fill" Margin="25,145,0,0"/>
-        <pu:FormGroup x:Name="downloadnotepadpp" Header="Downloaded : "
+            <Image HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="28" Source="Resources/f896aebe4551c1998fc00e2818180432803a952a418e30f2b21b647fde3cf836_200-removebg-preview.png" Stretch="Fill" Margin="25,145,0,0"/>
+            <pu:FormGroup x:Name="downloadnotepadpp" Header="Downloaded : "
                 GroupName="MyProgressBarGroup"
                 Style="{StaticResource ProgressBarFormGroupStyle}" Margin="25,194,0,251" Height="19" HorizontalAlignment="Left" VerticalAlignment="Center" HorizontalHeaderAlignment="Center" Width="195" Content="" VerticalContentAlignment="Center" HeaderPadding="0" HorizontalContentAlignment="Left"/>
-        <pu:FormGroup x:Name="speednotepadpp" Header="Speed : "
+            <pu:FormGroup x:Name="speednotepadpp" Header="Speed : "
                 GroupName="MyProgressBarGroup"
                 Style="{StaticResource ProgressBarFormGroupStyle}" Margin="226,194,406,251" Height="19" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="145" HeaderPadding="0" HorizontalHeaderAlignment="Right"/>
-        <Button x:Name="Notepadpp"
+            <Button x:Name="Notepadpp"
                 pu:ButtonHelper.CornerRadius="5" Margin="25,217,657,225" Content="Скачать" Click="Notepadpp_Click"/>
-        <pu:FormGroup x:Name="statusrufus" Header="Статус : "
+            <pu:FormGroup x:Name="statusrufus" Header="Статус : "
                 GroupName="MyProgressBarGroup"
                 Style="{StaticResource ProgressBarFormGroupStyle}" Margin="25,253,396,192" Height="19" Content="" HeaderPadding="0" HeaderWidth="0" HorizontalHeaderAlignment="Right" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" IsHitTestVisible="False"/>
-        <Image HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="28" Source="Resources/rufus-128.png" Stretch="Fill" Margin="25,246,0,0"/>
-        <pu:FormGroup x:Name="downloadrufus" Header="Downloaded : "
+            <Image HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="28" Source="Resources/rufus-128.png" Stretch="Fill" Margin="25,246,0,0"/>
+            <pu:FormGroup x:Name="downloadrufus" Header="Downloaded : "
                 GroupName="MyProgressBarGroup"
                 Style="{StaticResource ProgressBarFormGroupStyle}" Margin="25,295,0,150" Height="19" HorizontalAlignment="Left" VerticalAlignment="Center" HorizontalHeaderAlignment="Center" Width="195" Content="" VerticalContentAlignment="Center" HeaderPadding="0" HorizontalContentAlignment="Left"/>
-        <pu:FormGroup x:Name="speedrufus" Header="Speed : "
+            <pu:FormGroup x:Name="speedrufus" Header="Speed : "
                 GroupName="MyProgressBarGroup"
                 Style="{StaticResource ProgressBarFormGroupStyle}" Margin="226,295,406,150" Height="19" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="145" HeaderPadding="0" HorizontalHeaderAlignment="Right"/>
-        <Button x:Name="rufus"
+            <Button x:Name="rufus"
                 pu:ButtonHelper.CornerRadius="5" Margin="25,318,657,124" Content="Скачать" Click="rufus_Click"/>
-        <pu:FormGroup x:Name="statusgooglechrome" Header="Статус : "
+            <pu:FormGroup x:Name="statusgooglechrome" Header="Статус : "
                 GroupName="MyProgressBarGroup"
                 Style="{StaticResource ProgressBarFormGroupStyle}" Margin="25,356,396,89" Height="19" Content="" HeaderPadding="0" HeaderWidth="0" HorizontalHeaderAlignment="Right" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" IsHitTestVisible="False"/>
-        <Image HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="28" Source="Resources/chrome-logo.png" Stretch="Fill" Margin="25,349,0,0"/>
-        <pu:FormGroup x:Name="downloadchrome" Header="Downloaded : "
+            <Image HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="28" Source="Resources/chrome-logo.png" Stretch="Fill" Margin="25,349,0,0"/>
+            <pu:FormGroup x:Name="downloadchrome" Header="Downloaded : "
                 GroupName="MyProgressBarGroup"
                 Style="{StaticResource ProgressBarFormGroupStyle}" Margin="25,398,0,47" Height="19" HorizontalAlignment="Left" VerticalAlignment="Center" HorizontalHeaderAlignment="Center" Width="195" Content="" VerticalContentAlignment="Center" HeaderPadding="0" HorizontalContentAlignment="Left"/>
-        <pu:FormGroup x:Name="speedchrome" Header="Speed : "
+            <pu:FormGroup x:Name="speedchrome" Header="Speed : "
                 GroupName="MyProgressBarGroup"
                 Style="{StaticResource ProgressBarFormGroupStyle}" Margin="226,398,406,47" Height="19" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="145" HeaderPadding="0" HorizontalHeaderAlignment="Right"/>
-        <Button x:Name="chrome"
+            <Button x:Name="chrome"
                 pu:ButtonHelper.CornerRadius="5" Margin="25,421,657,21" Content="Скачать" Click="chrome_Click"/>
-        <pu:Switch x:Name="Explorerfiles" Content="Выключить недавние файлы" HorizontalAlignment="Center" Margin="476,65,74,0" VerticalAlignment="Top" Uid="switch" Width="227" VerticalContentAlignment="Center" BoxHeight="15" BoxWidth="30" CheckedBackground="#FF00D83B" Background="White" Click="Explorerfiles_Click"/>
-        <ProgressBar x:Name="progressnotepadpp" Style="{StaticResource StandardProgressBarStyle}"
+            <pu:Switch x:Name="Explorerfiles" Content="Выключить недавние файлы" HorizontalAlignment="Center" Margin="476,65,74,0" VerticalAlignment="Top" Uid="switch" Width="227" VerticalContentAlignment="Center" BoxHeight="15" BoxWidth="30" CheckedBackground="#FF00D83B" Background="White" Click="Explorerfiles_Click"/>
+            <ProgressBar x:Name="progressnotepadpp" Style="{StaticResource StandardProgressBarStyle}"
                 Background="#226C6EEA"
                 Foreground="#FF4A4AFF"
                 pu:ProgressBarHelper.ShadowColor="#6C6EEA" Margin="0,0,425,271" Height="14" HorizontalAlignment="Right" Width="353" VerticalAlignment="Bottom" />
-        <ProgressBar x:Name="progressrufus" Style="{StaticResource StandardProgressBarStyle}"
+            <ProgressBar x:Name="progressrufus" Style="{StaticResource StandardProgressBarStyle}"
                 Background="#229A6CEA"
                 Foreground="#FF9A6CEA"
                 pu:ProgressBarHelper.ShadowColor="#6C6EEA" Margin="0,0,425,170" Height="14" HorizontalAlignment="Right" Width="353" VerticalAlignment="Bottom" />
-        <ProgressBar x:Name="progresschrome" Style="{StaticResource StandardProgressBarStyle}"
+            <ProgressBar x:Name="progresschrome" Style="{StaticResource StandardProgressBarStyle}"
                 Background="#22C56CEB"
                 Foreground="#FFC56CEB"
                 pu:ProgressBarHelper.ShadowColor="#6C6EEA" Margin="0,0,425,67" Height="14" HorizontalAlignment="Right" Width="353" VerticalAlignment="Bottom" />
-        <TextBlock
+            <TextBlock
                 FontSize="14"
                 Foreground="Gray"
                 HorizontalAlignment="Right"
                 Text="{Binding Now, Source={x:Static pu:Tools.DateTime}, StringFormat=MM/dd/yyyy HH:mm:ss}" Margin="0,466,10,-20" />
-        <Button x:Name="ActiveWinrar"
+            <Button x:Name="ActiveWinrar"
             pu:ButtonHelper.CornerRadius="5" Margin="145,113,545,329" Content="Активировать" Click="ActiveWinrar_Click" Visibility="Hidden"/>
-        <Button x:Name="installWinrar"
+            <Button x:Name="installWinrar"
             pu:ButtonHelper.CornerRadius="5" Margin="257,113,425,329" Content="Установить" RenderTransformOrigin="0.139,0.417" Click="installWinrar_Click" IsEnabled="False"/>
-        <Button x:Name="delonedrive"
+            <Button x:Name="delonedrive"
             pu:ButtonHelper.CornerRadius="5" Margin="486,91,172,351" Content="Удалить OneDrive" Click="delonedrive_Click"/>
-        <Button x:Name="installnotepadpp"
+            <Button x:Name="installnotepadpp"
             pu:ButtonHelper.CornerRadius="5" Margin="257,217,425,225" Content="Установить" RenderTransformOrigin="0.139,0.417" IsEnabled="False" Click="installnotepadpp_Click"/>
-        <Button x:Name="openrufus"
+            <Button x:Name="openrufus"
             pu:ButtonHelper.CornerRadius="5" Margin="257,318,425,124" Content="Открыть" Click="openrufus_Click" IsEnabled="False"/>
-        <Button x:Name="installchrome"
+            <Button x:Name="installchrome"
             pu:ButtonHelper.CornerRadius="5" Margin="257,421,425,21" Content="Установить" RenderTransformOrigin="0.139,0.417" IsEnabled="False" Click="installchrome_Click"/>
-        <ComboBox x:Name="loadexplorerer" HorizontalAlignment="Left" Margin="486,141,0,0" VerticalAlignment="Top" Width="139" SelectionChanged="loadexplorerer_SelectionChanged" Height="24" IsReadOnly="True">
-            <ComboBoxItem Content="Этот компьютер"/>
-            <ComboBoxItem Content="Быстрый доступ"/>
-        </ComboBox>
-        <pu:FormGroup Header="Открывать проводник :" Height="21" Margin="486,120,0,0" Width="139" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalHeaderAlignment="Left" Orientation="Vertical"/>
-    </Grid>
+            <ComboBox x:Name="loadexplorerer" HorizontalAlignment="Left" Margin="486,141,0,0" VerticalAlignment="Top" Width="139" SelectionChanged="loadexplorerer_SelectionChanged" Height="24" IsReadOnly="True">
+                <ComboBoxItem Content="Этот компьютер"/>
+                <ComboBoxItem Content="Быстрый доступ"/>
+            </ComboBox>
+            <pu:FormGroup Header="Открывать проводник :" Height="21" Margin="486,120,0,0" Width="139" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalHeaderAlignment="Left" Orientation="Vertical"/>
+            <pu:FormGroup x:Name="statusgooglechrome_Copy" Header="Статус : "
+            GroupName="MyProgressBarGroup"
+            Style="{StaticResource ProgressBarFormGroupStyle}" Margin="25,467,396,-19" Height="19" Content="" HeaderPadding="0" HeaderWidth="0" HorizontalHeaderAlignment="Right" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" IsHitTestVisible="False"/>
+            <Image HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="28" Source="Resources/chrome-logo.png" Stretch="Fill" Margin="25,458,0,-17"/>
+            <pu:FormGroup x:Name="downloadchrome_Copy" Header="Downloaded : "
+            GroupName="MyProgressBarGroup"
+            Style="{StaticResource ProgressBarFormGroupStyle}" Margin="25,509,0,-61" Height="19" HorizontalAlignment="Left" VerticalAlignment="Center" HorizontalHeaderAlignment="Center" Width="195" Content="" VerticalContentAlignment="Center" HeaderPadding="0" HorizontalContentAlignment="Left"/>
+            <pu:FormGroup x:Name="speedchrome_Copy" Header="Speed : "
+            GroupName="MyProgressBarGroup"
+            Style="{StaticResource ProgressBarFormGroupStyle}" Margin="228,509,408,-61" Height="19" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="144" HeaderPadding="0" HorizontalHeaderAlignment="Right"/>
+            <Button x:Name="chrome_Copy"
+            pu:ButtonHelper.CornerRadius="5" Margin="25,530,657,-89" Content="Скачать" Click="chrome_Click"/>
+            <ProgressBar x:Name="progresschrome_Copy" Style="{StaticResource StandardProgressBarStyle}"
+            Background="#22C56CEB"
+            Foreground="#FFC56CEB"
+            pu:ProgressBarHelper.ShadowColor="#6C6EEA" Margin="0,0,425,-43" Height="14" HorizontalAlignment="Right" Width="353" VerticalAlignment="Bottom" />
+            <Button x:Name="installchrome_Copy"
+            pu:ButtonHelper.CornerRadius="5" Margin="257,530,425,-89" Content="Установить" RenderTransformOrigin="0.139,0.417" IsEnabled="False" Click="installchrome_Click"/>
+            <pu:Switch x:Name="Explorer" Content="Включить расширение файлов" HorizontalAlignment="Center" Margin="476,44,74,0" VerticalAlignment="Top" Uid="switch" Width="227" Click="Explorer_Click" VerticalContentAlignment="Center" BoxHeight="15" BoxWidth="30" CheckedBackground="#FF00D83B" Background="White"/>
+
+        </Grid>
+    </ScrollViewer>
 </pu:WindowX>

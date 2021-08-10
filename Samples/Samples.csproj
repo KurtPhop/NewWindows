@@ -113,11 +113,18 @@
     <Compile Include="Views\Tools\IconFontView.xaml.cs">
       <DependentUpon>IconFontView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
     <Page Include="ReportView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Tools\IconFontView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -195,6 +202,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\pngwing.com.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\kisspng-lightshot-screenshot-computer-icons-android-downlo-feather-logo-design-5ae17977ab3af6.5056502115247261357014.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
